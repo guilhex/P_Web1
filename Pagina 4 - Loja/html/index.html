@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsoleX</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ConsoleX</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="../../Projeto 2 - Portifólio/html/index.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Produtos -->
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produto-lista">
+                <div class="produto" data-id="1" data-preco="1500">
+                    <img src="../img/monitor4.webp" alt="Produto 1">
+                    <h3>Monitor</h3>
+                    <p>Descrição do produto 1.</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="2" data-preco="3000">
+                    <img src="../img/monitor3.jpg" alt="Produto 2">
+                    <h3>PC Gamer</h3>
+                    <p>Descrição do produto 2.</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="3" data-preco="2500">
+                    <img src="../img/ps5.jpg" alt="Produto 3">
+                    <h3>PS5</h3>
+                    <p>Descrição do produto 3.</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="produto-lista">
+                <div class="produto" data-id="4" data-preco="1500">
+                    <img src="../img/monitor.png" alt="Produto 1">
+                    <h3>Monitor</h3>
+                    <p>Descrição do produto 1.</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="5" data-preco="2800">
+                    <img src="../img/gabinete1.webp" alt="Produto 2">
+                    <h3>PC Gamer</h3>
+                    <p>Descrição do produto 2.</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-id="6" data-preco="2200">
+                    <img src="../img/xbox.png" alt="Produto 3">
+                    <h3>Xbox</h3>
+                    <p>Descrição do produto 3.</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrinho de Compras - Caixinha -->
+    <div id="caixa-carrinho">
+        <h3>Carrinho</h3>
+        <div id="itens-carrinho">0 itens</div>
+        <div id="total-carrinho">R$ 0,00</div>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

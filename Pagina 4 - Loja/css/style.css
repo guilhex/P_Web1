@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #2b7bc3;
+    --secondary-color: #fff;
+    --hover-color: rgba(255, 255, 255, 0.2);
+    --text-color: #333;
+    --white-color: #fff;
+    --background-color: #f4f4f4; /* Fundo claro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Fundo claro */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para o menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+    padding: 15px 0;
+    display: block;
+    transition: text-shadow 0.3s ease;
+}
+
+.menu a:hover {
+    text-shadow: 0px 0px 5px var(--white-color);
+}
+
+/* Estilos principais */
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.produto-lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto {
+    display: inline-block;
+    width: 25%;
+    margin: 1.66%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #2b7bc3;
+    text-align: center;
+    height: 400px;
+    box-sizing: border-box;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.produto h3,
+.produto p,
+.produto button {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #2b7bc3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2b7bc3;
+}
+
+/* Carrinho de compras - Caixinha */
+#caixa-carrinho {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    z-index: 100;
+}
+
+#caixa-carrinho h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#itens-carrinho, #total-carrinho {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#finalizar-compra {
+    padding: 10px;
+    background-color: #2b7bc3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#finalizar-compra:hover {
+    background-color: #1d5b94;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2b7bc3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .produto {
+        width: 48%;
+    }
+
+    .slider .slide img {
+        height: 250px;
+    }
+}

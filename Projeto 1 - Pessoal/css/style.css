@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #2b7bc3;
+    --secondary-color: #A8CAE9;
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 1rem 0;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    height: 56px;
+    z-index: 1000;
+}
+
+.menu img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.menu a {
+    border-radius: 30px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 0px 5px var(--white-color);
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.minha-foto {
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem auto;
+    border: 2px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.minha-foto:hover {
+    transform: scale(1.05);
+}
+
+.sobre-Mim, .habilidades, .contato {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidades li {
+    padding: 5px 0;
+}
+
+.contato figure {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contato img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contato img:hover {
+    transform: scale(1.2);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Animação de Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .sobre-Mim, .habilidades, .contato {
+        flex-direction: column;
+        text-align: center;
+    }
+}
